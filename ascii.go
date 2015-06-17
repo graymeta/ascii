@@ -19,7 +19,7 @@ const GrayMeta = `  _____ _____        __     ____  __ ______ _______
 func PrintBanner(w io.Writer, name string, version interface{}) {
 	w.Write([]byte(GrayMeta))
 	fmt.Fprintln(w)
-	fmt.Fprintf(w, "\t%s (v%v)\twww.graymeta.com", name, version)
+	fmt.Fprintf(w, "\t%s (%v)\twww.graymeta.com", name, version)
 	fmt.Fprintln(w)
 	fmt.Fprintln(w)
 }
